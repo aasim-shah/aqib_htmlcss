@@ -22,7 +22,7 @@ body{
     /* font-family: 'Noto Nastaliq Urdu', serif; */
     /* font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif; */
     /* font-family: 'Artico', sans-serif; */
-
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .themeBtn{
  background-color: #23A6F0;
@@ -59,7 +59,7 @@ body{
 }
 
 .lineHeight {
-  line-height: 30px;
+  line-height: 30px !important;
 }
 
 @media only screen and (max-width: 600px) {
