@@ -11,6 +11,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/global.css">
 
+
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
     <title>Index</title>
 </head>
 
@@ -33,7 +41,7 @@
             <a href="">الصفحة الرئيسية </a>
         </div>
         <div class="w-16">
-            <img src="./assets/logo.png" alt="">
+            <img src="./assets/new_logo.png" alt="">
         </div>
 
     </nav>
@@ -73,7 +81,7 @@
                 التدريب الاحترافي
             </span>
             <p class="text-xl">التدريب العملي على مختبرات الأمن السيبراني</p>
-            <p class="font-thin mt-4">
+            <p class="font-thin mt-4 lineHeight">
                 انغمس في التعلم العملي من خلال مختبراتنا العملية، حيث تلتقي النظرية بالتطبيق. ,اكتسب خبرة واقعية في
                 مواجهة التحديات الأمنية، وتطوير مهارات استكشاف الأخطاء وإصلاحها، وتعزيز كفاءتك من خلال البيئات التفاعلية
                 والمحاكاة. ,توفر مختبراتنا المصممة بعناية منصة ديناميكية وجذابة لصقل مهارات الأمن السيبراني العملية،
@@ -104,7 +112,7 @@
                 التدريب الاحترافي
             </span>
             <p class="text-xl">التدريب العملي على مختبرات الأمن السيبراني</p>
-            <p class="font-thin mt-4">
+            <p class="font-thin lineHeight mt-4">
                 انغمس في التعلم العملي من خلال مختبراتنا العملية، حيث تلتقي النظرية بالتطبيق. ,اكتسب خبرة واقعية في
                 مواجهة التحديات الأمنية، وتطوير مهارات استكشاف الأخطاء وإصلاحها، وتعزيز كفاءتك من خلال البيئات التفاعلية
                 والمحاكاة. ,توفر مختبراتنا المصممة بعناية منصة ديناميكية وجذابة لصقل مهارات الأمن السيبراني العملية،
@@ -119,6 +127,9 @@
     </section>
 
 
+    <div class="w-10/12 mx-auto rounded-full my-12">
+        <div id="map" style="height: 300px;" class="rounded-lg"></div>
+    </div>
 
 
 
@@ -175,8 +186,25 @@
         </footer>
     </section>
 
+
+   
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
+
+
+
+                <script>
+                     const latitude = "28.375291"
+                    const longitude = "43.821644"
+                    console.log({ latitude })
+                    var map = L.map('map').setView([latitude, longitude], 14);
+                  
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                      attribution: '© OpenStreetMap contributors'
+                    }).addTo(map);
+                  </script>
+                  
 </body>
 
 </html>

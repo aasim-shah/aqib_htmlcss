@@ -58,6 +58,9 @@ body{
   max-width: 20rem;
 }
 
+.lineHeight {
+  line-height: 30px;
+}
 
 @media only screen and (max-width: 600px) {
     /* Your styles for small screens go here */
