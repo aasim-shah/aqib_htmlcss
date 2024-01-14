@@ -1,14 +1,8 @@
 
-
-  /* @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');   */
-  /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Indic+Siyaq+Numbers&display=swap'); */
-  
-  
   * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /* font-family: ui-sans-serif,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; */
     font-family: "Segoe UI", Roboto, Arial, sans-serif !important;
 
 }
@@ -19,12 +13,7 @@ body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /* font-family: 'Jameel Noori Nastaleeq Kasheeda', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Noto Nastaliq Urdu', serif; */
-    /* font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif; */
-    /* font-family: 'Artico', sans-serif; */
-  
+   
 }
 .themeBtn{
  background-color: #23A6F0;
@@ -69,13 +58,23 @@ body{
     #hero_cards{
       top: 24rem;
     }
+    .hero_height{
+      height: 21rem;
+    }
+    .tryheight{
+      height: 50vh;
+    }
   }
   
 
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Your styles for medium screens go here */
-    #hero_cards{
-      top: 30rem;
+
+    .hero_height{
+      height: 100vh;
+    }
+    .tryheight{
+      height: 65vh;
     }
   }
   
@@ -84,5 +83,21 @@ body{
     #hero_cards{
       bottom: -3.4rem;
     }
+    .hero_height{
+      height: 283vh;
+    }
+    .tryheight{
+      height: 75vh;
+    }
   }
   
+
+  @media only screen and (min-width: 1250px) {
+    /* Your styles for large screens go here */
+    #hero_cards{
+      bottom: -3.4rem;
+    }
+    .hero_height{
+      height: 100vh;
+    }
+  }

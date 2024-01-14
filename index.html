@@ -6,7 +6,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/global.css">
 
     <title>Index</title>
@@ -20,7 +22,7 @@
         </div>
         <button id="openMenu" class=" block md:hidden ">
             <i class="fa-solid fa-bars"></i>
-                </button>
+        </button>
 
         <div class="hidden flex-row gap-6 md:flex">
             <a href="/about.html">من نحن </a>
@@ -39,39 +41,41 @@
 
 
 
-<section id="menu_sideBar" class=" hidden card-colour px-4 py-2 absolute  top-0 left-0 right-0 " style="text-align: end; height: 100vh; z-index: 99;">
-    <div class="" style="text-align: start;">
-        <button  id="closeMenu" class=" mt-4 ml-1">X</button>
-    </div>
+    <section id="menu_sideBar" class=" hidden card-colour px-4 py-2 absolute  top-0 left-0 right-0 "
+        style="text-align: end; height: 100vh; z-index: 99;">
+        <div class="" style="text-align: start;">
+            <button id="closeMenu" class=" mt-4 ml-1">X</button>
+        </div>
 
-    <div class="flex flex-col gap-5 mt-5 font-light">
-        <a href="">من نحن </a>
+        <div class="flex flex-col gap-5 mt-5 font-light">
+            <a href="">من نحن </a>
             <a href="">اتصل </a>
             <a href="">التدريب الرقمي </a>
             <a href="">الجلسات </a>
             <a href="">مختبر الأمن السيبراني </a>
             <a href="">الصفحة الرئيسية </a>
-    </div>
-    <div class="themeBtn text-center w-32 mx-auto mt-20">
-        اتصل بنا
-    </div>
+        </div>
+        <div class="themeBtn text-center w-32 mx-auto mt-20">
+            اتصل بنا
+        </div>
 
-</section>
-
-
+    </section>
 
 
-    <section id="hero" class="relative">
-        <div class="img w-full  relative " style="height: 122vh;">
+
+
+    <section id="hero" class="relative  ">
+        <div class="img w-full  relative tryheight" >
             <div class="absolute top-0 left-0 right-0 bottom-0"
-                style="background-color: rgba(0, 0, 0, 0.716); opacity: .7;z-index: 9;"></div>
-            <img src="./assets//hero_banner.png" class="absolute top-0 left-0 right-0 bottom-0" alt="">
+                style="background-color: rgba(0, 0, 0, 0.716); opacity: .7;z-index: 9;">
+            </div>
+            <img src="./assets//hero_banner.png" class="absolute top-0 left-0 right-0 bottom-0 tryheight" alt="">
             <div class="hero-content relative   w-full  flex flex-col gap-5 justify-center items-center "
-                style="z-index: 11;height: 70%;">
+                style="z-index: 11;height: 100%;">
                 <span style="color: #23A6F0;" class="font-black">
                     الأمن السيبراني
                 </span>
-                <p class="text-lg md:text-3xl my-3">
+                <p class="text-lg  md:text-3xl ">
                     أتقن الأمن السيبراني من خلال تدريبنا المتطور
                 </p>
                 <p class="text-sm">
@@ -86,7 +90,7 @@
 
 
 
-        <div id="hero_cards" class="absolute  flex flex-col md:flex-row justify-center w-full gap-12 items-center "
+        <div id="hero_cards" class=" md:absolute  flex flex-col md:flex-row justify-center w-full gap-12 items-center "
             style="background-color: transparent; z-index: 12;">
             <div class="hero-card">
                 <span class="mb-3  ">
@@ -251,7 +255,7 @@
             <p class=" mt-2"> كلمات من عملائنا </p>
         </div>
 
-        <div class="flex flex-col md:flex-row w-10/12 mx-auto justify-center gap-4">
+        <div class="flex flex-col md:flex-row items-center w-10/12 mx-auto justify-center gap-4">
             <div class="card-colour py-4  px-5  " style="max-width: 20rem; text-align: end;border-radius: 1rem;">
                 <p class="text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam at quae omnis nobis
@@ -319,11 +323,11 @@
         <div class="headings mb-12 mt-32  flex flex-col justify-center items-center">
             <span style="color: #23A6F0;">
                 التسجيل </span>
-            <p class=" mt-2"> تسجيل الدورة | ,التسجيل في الدورة </p>
+            <p class="font-bold mt-2"> تسجيل الدورة | ,التسجيل في الدورة </p>
         </div>
 
         <div class="flex flex-col w-11/12 md:w-9/12 mx-auto" style="text-align: end;">
-            <div class="flex flex-row   gap-4">
+            <div class="flex flex-col sm:flex-row   gap-4">
                 <div class="flex flex-col w-full">
                     <label for="phone" class="text-sm mb-2"> رقم الهاتف </label>
                     <input type="text" name="" dir="rtl" class="card-colour w-full py-3 px-2 rounded-lg "
@@ -337,7 +341,8 @@
             </div>
             <div class="flex flex-col mt-5 w-full">
                 <label for="name" class="text-sm mb-2"> عنوان البريد الإلكتروني </label>
-                <input type="text" name="" dir="rtl" class="card-colour w-full py-3 px-2 rounded-lg "
+                <input type="text" name="" dir="rtl"
+                    class="card-colour w-full py-3 px-2 placeholder:text-sm rounded-lg "
                     placeholder=" البريد الإلكتروني | ,البريد الإلكتروني الذي سيتم إرسال شهادة إتمام الدورة إليه "
                     id="name">
             </div>
