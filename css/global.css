@@ -73,6 +73,9 @@ body{
     .hero_height{
       height: 100vh;
     }
+    .headings{
+      margin-top: 11rem;
+    }
     .tryheight{
       height: 65vh;
     }
