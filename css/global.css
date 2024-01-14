@@ -64,6 +64,9 @@ body{
     .tryheight{
       height: 50vh;
     }
+    .footerText{
+      font-size: 11px;
+    }
   }
   
 
@@ -91,6 +94,9 @@ body{
     }
     .tryheight{
       height: 75vh;
+    }
+    .footerText{
+      font-size: 17px;
     }
   }
   
